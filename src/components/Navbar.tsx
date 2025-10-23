@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="text-2xl font-bold">
-            <span className="text-gradient">MS</span>
+            <span className="text-gradient">M.S.</span>
             <span className="text-foreground"> Dhanussh</span>
           </a>
 

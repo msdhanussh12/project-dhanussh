@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="space-y-2">
               <p className="text-primary text-lg font-medium">Hello, I'm</p>
               <h1 className="text-5xl md:text-7xl font-bold">
-                M S <span className="text-gradient">Dhanussh</span>
+                M.S. <span className="text-gradient">Dhanussh</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted-foreground font-medium">
                 AI & ML Enthusiast | Problem Solver
@@ -68,7 +68,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full opacity-20"></div>
                 <img
                   src={profilePicture}
-                  alt="M S Dhanussh"
+                  alt="M.S. Dhanussh"
                   className="w-full h-full object-cover rounded-full border-4 border-primary/50 relative z-10"
                 />
               </div>
