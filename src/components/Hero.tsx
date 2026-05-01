@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 import profilePicture from "@/assets/profile-photo-final.jpg";
 
 const Hero = () => {
@@ -30,6 +30,12 @@ const Hero = () => {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="#portfolio">View Projects</a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="/Dhanussh_Resume.pdf" download="Dhanussh_Resume.pdf">
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
 
