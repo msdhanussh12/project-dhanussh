@@ -10,6 +10,12 @@ const About = () => {
 
   const experience = [
     {
+      role: "Student Intern",
+      company: "ISRO-IPRC, Mahendragiri R.F.",
+      period: "June 2026 - July 2026",
+      description: "Research & Development",
+    },
+    {
       role: "Internship Trainee",
       company: "HVF Avadi",
       period: "June 2025",
