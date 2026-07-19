@@ -86,11 +86,16 @@ const About = () => {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">Education</h3>
-                <div className="space-y-1">
-                  <p className="font-medium text-foreground">{education.degree}</p>
-                  <p className="text-muted-foreground">{education.institution}</p>
-                  <p className="text-sm text-primary">Graduating {education.year}</p>
+                <h3 className="text-xl font-semibold mb-4">Education</h3>
+                <div className="space-y-4">
+                  {education.map((edu, index) => (
+                    <div key={index} className="space-y-1">
+                      <p className="font-medium text-foreground">{edu.degree}</p>
+                      <p className="text-sm text-muted-foreground">{edu.institution}</p>
+                      <p className="text-xs text-primary">{edu.period}</p>
+                      <p className="text-xs text-muted-foreground">{edu.grade}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
