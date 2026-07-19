@@ -2,11 +2,26 @@ import { Card } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Code, Brain } from "lucide-react";
 
 const About = () => {
-  const education = {
-    degree: "B.E. CSE (AI & ML)",
-    institution: "S.A. Engineering College",
-    year: "2027",
-  };
+  const education = [
+    {
+      degree: "B.E. CSE (AI & ML)",
+      institution: "S.A. Engineering College",
+      period: "2023 - 2027",
+      grade: "CGPA: 7.80 (as of 6th semester)",
+    },
+    {
+      degree: "AISSCE (HSC)",
+      institution: "Kendriya Vidyalaya HVF Avadi, Chennai - 54",
+      period: "August 2021 - May 2023",
+      grade: "Aggregate: 81.00%",
+    },
+    {
+      degree: "AISSCE (SSC)",
+      institution: "Kendriya Vidyalaya HVF Avadi, Chennai - 54",
+      period: "April 2011 - August 2021",
+      grade: "Aggregate: 94.80%",
+    },
+  ];
 
   const experience = [
     {
@@ -71,11 +86,16 @@ const About = () => {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">Education</h3>
-                <div className="space-y-1">
-                  <p className="font-medium text-foreground">{education.degree}</p>
-                  <p className="text-muted-foreground">{education.institution}</p>
-                  <p className="text-sm text-primary">Graduating {education.year}</p>
+                <h3 className="text-xl font-semibold mb-4">Education</h3>
+                <div className="space-y-4">
+                  {education.map((edu, index) => (
+                    <div key={index} className="space-y-1">
+                      <p className="font-medium text-foreground">{edu.degree}</p>
+                      <p className="text-sm text-muted-foreground">{edu.institution}</p>
+                      <p className="text-xs text-primary">{edu.period}</p>
+                      <p className="text-xs text-muted-foreground">{edu.grade}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
