@@ -42,6 +42,31 @@ const Portfolio = () => {
       ],
       github: "https://github.com/msdhanussh12",
     },
+    {
+      title: "CRAVO (FoodPartner)",
+      role: "Full-Stack Engineer",
+      description:
+        "A three-way marketplace platform connecting customers, restaurants, and riders with an AI-powered receipt parser, a greedy min-cash-flow settlement engine, UPI intent payments, UTR ledger verification, and geospatial rider allocation. Built as a Turborepo monorepo with a Next.js 14 web portal, an Expo React Native mobile app, and a MongoDB backend.",
+      technologies: [
+        "Turborepo",
+        "Next.js 14",
+        "React Native (Expo)",
+        "TypeScript",
+        "MongoDB",
+        "Node.js",
+        "OCR / AI",
+        "UPI Intents",
+      ],
+      highlights: [
+        "AI receipt parser with OCR-based bill splitting",
+        "Greedy min-cash-flow settlement engine",
+        "Paise-based math to eliminate floating-point errors",
+        "UPI intents with UTR ledger verification",
+        "Geospatial rider allocation with 2dsphere indexing",
+        "Turborepo monorepo: web portal, mobile app, shared packages",
+      ],
+      github: "https://github.com/msdhanussh12",
+    },
   ];
 
   return (
